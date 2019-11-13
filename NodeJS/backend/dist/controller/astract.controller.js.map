@@ -1,0 +1,1 @@
+{"version":3,"file":"astract.controller.js","sourceRoot":"","sources":["../../src/controller/astract.controller.ts"],"names":[],"mappings":";;AAAA,qCAAqD;AAErD,MAAsB,kBAAkB;IAGpC;QACI,IAAI,CAAC,MAAM,GAAG,gBAAM,EAAE,CAAC;QACvB,IAAI,CAAC,SAAS,EAAE,CAAC;IACrB,CAAC;IAEM,SAAS;QACZ,OAAO,IAAI,CAAC,MAAM,CAAC;IACvB,CAAC;CAGJ;AAbD,gDAaC"}

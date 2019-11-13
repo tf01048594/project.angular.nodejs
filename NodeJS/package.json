@@ -1,0 +1,19 @@
+{
+    "name": "web-node",
+    "version": "0.1.0",
+    "description": "A simple website built with Node, Express and Pug",
+    "main": "app.ts",
+    "scripts": {
+        "start": "npx pm2 start app.ts --watch"
+    },
+    "author": "Ayo Isaiah",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mysql": "^2.17.1",
+        "pug": "^2.0.3"
+    },
+    "devDependencies": {
+        "pm2": "^2.10.3"
+    }
+}

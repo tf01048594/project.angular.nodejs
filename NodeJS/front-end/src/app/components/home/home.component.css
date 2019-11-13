@@ -1,0 +1,28 @@
+.example-button-row button,
+.example-button-row a {
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+ng-container {
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar-button {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+mat-sidenav {
+    background: #bdc3c7;
+    width: 200px;
+}
+
+.example-container {
+    background: #eee;
+    width: 700px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #555;
+}

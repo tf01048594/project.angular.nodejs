@@ -1,0 +1,60 @@
+<ng-container>
+    <div class="example-button-row">
+        <button mat-raised-button color="primary" mat-button [matMenuTriggerFor]="aboveMenu">Above</button>
+        <mat-menu #aboveMenu="matMenu" yPosition="above">
+            <button mat-menu-item [matMenuTriggerFor]="subMenu">Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+
+        <mat-menu #subMenu="matMenu">
+            <button mat-menu-item>Sub Item</button>
+        </mat-menu>
+
+        <button mat-raised-button color="primary" mat-button [matMenuTriggerFor]="belowMenu">Below</button>
+        <mat-menu #belowMenu="matMenu" yPosition="below">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+
+        <button mat-raised-button color="primary" mat-button [matMenuTriggerFor]="beforeMenu">Before</button>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+
+
+        <button mat-raised-button color="primary" mat-button [matMenuTriggerFor]="afterMenu">After</button>
+        <mat-menu #afterMenu="matMenu" xPosition="after">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </div>
+    <div class="sidebar">
+        <mat-drawer-container class="example-container">
+            <mat-drawer mode="side" opened>
+                <div class="sidebar-button">Sidenav Header</div>
+                <div class="sidebar-button">
+                    <button mat-raised-button color="primary">Above</button>
+                </div>
+
+                <div class="sidebar-button">
+                    <button mat-raised-button color="primary" (click)="btnClick();">Introduce</button>
+                </div>
+
+
+                <!-- using tag a -->
+                <!-- <div class="sidebar-button">
+                    <a routerLink="/test" routerLinkActive="active"> Test</a>
+                </div> -->
+
+
+
+
+            </mat-drawer>
+            <mat-drawer-content>
+                <router-outlet></router-outlet>
+
+            </mat-drawer-content>
+        </mat-drawer-container>
+    </div>
+</ng-container>
